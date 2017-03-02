@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Directory listing for {{ path }}</title>
+</head>
+<body>
+    <h2>Directory listing for {{ path }}</h2>
+    <hr>
+        <ul>
+            {% for file_ in files %}
+                <li><a href="{{ file_ }}">{{ files[file_] }}</a>
+            {% endfor %}
+        </ul>
+    <hr>
+</body>
+</html>
